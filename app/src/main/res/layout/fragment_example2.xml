@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:hav="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="net.zarbel.headerarrow.MainActivity">
+
+    <TextView
+        android:text="With custom drawables"
+        android:textSize="18dp"
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <net.zarbel.headerarrowlib.HeaderArrowView
+        hav:content_layout="@layout/layout_test"
+        android:id="@+id/header1"
+        hav:header_icon_position="left"
+        hav:header_icon="@android:drawable/ic_btn_speak_now"
+        hav:header_icon_color="#333"
+        hav:title_color="#333"
+        hav:content_background_resource="@drawable/bg_res"
+        hav:header_background_resource="@drawable/bg_res"
+        hav:header_title="Test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:text="With custom drawables and color"
+        android:textSize="18dp"
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <net.zarbel.headerarrowlib.HeaderArrowView
+        hav:content_layout="@layout/layout_test"
+        android:id="@+id/header2"
+        hav:header_icon_position="left"
+        hav:header_icon="@android:drawable/ic_btn_speak_now"
+        hav:header_icon_color="#fff"
+        hav:title_color="#fff"
+        hav:content_background_resource="@drawable/bg_res"
+        hav:header_background_resource="@drawable/bg_res"
+        hav:content_background_tint_color="#cbdedc"
+        hav:header_background_tint_color="#555"
+        hav:header_title="Test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

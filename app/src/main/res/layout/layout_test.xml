@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <TextView
+            android:text="Lorem ipsum dolor sit amet, cum labores repudiandae comprehensam eu. Nulla partem comprehensam sea no, ignota nostrud expetendis vis ne, accusam facilisis pri id. No partem everti reformidans eam, in ius adipisci theophrastus. Sit ne salutatus liberavisse, per stet nulla ceteros ut."
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+</LinearLayout>

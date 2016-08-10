@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:hav="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="net.zarbel.headerarrow.MainActivity">
+
+    <TextView
+        android:text="Standard"
+        android:textSize="18dp"
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <net.zarbel.headerarrowlib.HeaderArrowView
+        android:id="@+id/headeraa"
+        hav:content_layout="@layout/layout_test"
+        hav:header_title="@string/app_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:text="With custom colors and icons"
+        android:textSize="18dp"
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <net.zarbel.headerarrowlib.HeaderArrowView
+        hav:content_layout="@layout/layout_test"
+        android:id="@+id/headerbbb"
+        hav:header_icon_position="left"
+        hav:header_icon="@android:drawable/ic_btn_speak_now"
+        hav:header_icon_color="#000"
+        hav:title_color="#000"
+        hav:content_background_tint_color="#ff6464"
+        hav:header_background_tint_color="#91ff91"
+        hav:header_title="Test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

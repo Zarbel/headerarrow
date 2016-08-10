@@ -1,0 +1,18 @@
+<resources>
+    <declare-styleable name="HeaderArrowView">
+        <attr name="content_layout" format="reference" />
+        <attr name="header_icon_position" format="enum">
+            <enum name="left" value="0"/>
+            <enum name="right" value="1"/>
+        </attr>
+        <attr name="header_title" format="string"/>
+        <attr name="header_icon" format="reference"/>
+        <attr name="header_background_resource" format="reference"/>
+        <attr name="content_background_resource" format="reference"/>
+        <attr name="header_icon_color" format="color"/>
+        <attr name="title_color" format="color"/>
+        <attr name="header_background_tint_color" format="color"/>
+        <attr name="content_background_tint_color" format="color"/>
+
+    </declare-styleable>
+</resources>
