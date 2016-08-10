@@ -22,6 +22,7 @@ Add it in your root build.gradle at the end of repositories:
 	        compile 'com.github.Zarbel:headerarrow:v1.0-beta.1'
    	}
 ```
+[![](https://jitpack.io/v/Zarbel/headerarrow.svg)](https://jitpack.io/#Zarbel/headerarrow)
 
 ### Usage ###
 
