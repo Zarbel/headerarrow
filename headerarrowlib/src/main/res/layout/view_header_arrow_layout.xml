@@ -48,7 +48,7 @@
         android:fillViewport="true"
         android:id="@+id/scrll_content"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
         <LinearLayout
             android:orientation="vertical"
             android:id="@+id/llay_content"
