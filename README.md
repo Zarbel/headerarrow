@@ -4,6 +4,24 @@ HeaderArrowView is a customizable library that allows to use a header that hides
 
 ![](https://bytebucket.org/juzabel/headerarrowlib/raw/4328f9f407c91a427d51ecf6dd235fce5fe2efcc/images/GIFLibrary.gif?token=842ab6f141191306f23da84c344a809c85261467)
 
+### Import ###
+
+* Gradle:
+Add it in your root build.gradle at the end of repositories:
+```
+   	allprojects {
+   		repositories {
+   			...
+   			maven { url "https://jitpack.io" }
+   		}
+   	}
+```
+   Step 2. Add the dependency
+```
+   	dependencies {
+   	        compile 'com.github.Zarbel:headerarrow:1.0RC'
+   	}
+```
 
 ### Usage ###
 
