@@ -20,7 +20,7 @@
 
     <net.zarbel.headerarrowlib.HeaderArrowView
         android:id="@+id/header_animation"
-        hav:content_layout="@layout/layout_test"
+        hav:content_layout="@layout/layout_test2"
         hav:header_title="@string/app_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
