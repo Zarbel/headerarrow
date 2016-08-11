@@ -14,6 +14,7 @@ import android.os.Parcelable;
 import android.support.annotation.DrawableRes;
 import android.support.v4.content.ContextCompat;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.animation.DecelerateInterpolator;
@@ -102,7 +103,7 @@ public class HeaderArrowView extends LinearLayout implements View.OnClickListene
     private OnVisibilityChangeListener onVisibilityChangeListener = null;       //Visibility change listener
 
 
-    private boolean isRestoreing = false;
+    private boolean isRestoring = false;
 
     /**
      * Constructor with content view passed by parameter
@@ -244,6 +245,8 @@ public class HeaderArrowView extends LinearLayout implements View.OnClickListene
             headerBackgroundColor = a.getColor(R.styleable.HeaderArrowView_header_background_tint_color, -1);
             contentBackgroundColor = a.getColor(R.styleable.HeaderArrowView_content_background_tint_color,  -1);
 
+        } catch(Exception e){
+            Log.e(getContext().getPackageName(), "Exception", e);
         } finally {
             a.recycle();
         }
@@ -261,7 +264,7 @@ public class HeaderArrowView extends LinearLayout implements View.OnClickListene
             post(new Runnable() {
                 @Override
                 public void run() {
-                    if(!isRestoreing) {
+                    if(!isRestoring) {
                         scrollView.setPivotX(0);
                         scrollView.setPivotY(0);
 
@@ -450,7 +453,7 @@ public class HeaderArrowView extends LinearLayout implements View.OnClickListene
     @Override
     protected void onRestoreInstanceState(Parcelable state) {
         if(state instanceof Bundle){
-            isRestoreing = true;
+            isRestoring = true;
             Bundle bundle = (Bundle) state;
             isShown = bundle.getBoolean(IS_SHOWN);
             height = bundle.getInt(HEIGHT);
@@ -475,7 +478,7 @@ public class HeaderArrowView extends LinearLayout implements View.OnClickListene
                     }else{
                         hide(0);
                     }
-                    isRestoreing = false;
+                    isRestoring = false;
                 }
             });
 
