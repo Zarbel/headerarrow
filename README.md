@@ -19,7 +19,7 @@ Add it in your root build.gradle at the end of repositories:
    Step 2. Add the dependency
 ```
    	dependencies {
-	        compile 'com.github.Zarbel:headerarrow:v1.0-beta.1'
+	        compile 'com.github.Zarbel:headerarrow:v1.0-beta.2'
    	}
 ```
 [![](https://jitpack.io/v/Zarbel/headerarrow.svg)](https://jitpack.io/#Zarbel/headerarrow)
